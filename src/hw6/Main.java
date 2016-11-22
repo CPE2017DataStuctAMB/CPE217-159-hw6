@@ -11,13 +11,13 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        testCase(0);
+        testCase(12);
     }
 
     public static void testCase(int item){
         System.out.println("==============================");
         System.out.println("Now Testcase "+item);
-        if(item == 0){
+        if(item == 1){
             BSTree tree;
             tree = generateTree1();
             tree.printTree();
@@ -45,7 +45,7 @@ public class Main {
             tree.singleRotateFromRight(tree.find(8));
             tree.printTree();
 
-        }else if(item == 1){
+        }else if(item == 2){
             BSTree tree;
             tree = generateTree1();
             tree.printTree();
@@ -222,7 +222,7 @@ public class Main {
             tree1.printTree();
             System.out.println("Tree height after one deletion = " + Node.height(tree1.root));
 
-        }else if(item == 11) {
+        }else if(item == 12) {
             BSTree tree1 = new BSTree();
             long start = System.currentTimeMillis();
             int N = 13000;
